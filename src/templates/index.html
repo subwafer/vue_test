@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask + Vue JS Example | Robot Management App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/index.css') }}">
+</head>
+<body class="container">
+  <h1>{{ page_name }}</h1>
+
+  <div class="bg-primary m-2 p-2">
+    <h2>Table Example</h2>
+    <div id="test"></div>
+  </div>
+  <br>
+  <div class="bg-secondary m-2 p-2">
+    <h2>List Example</h2>
+    <div id="test2"></div>
+  </div>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='dist/index.js') }}"></script>
+</body>
+</html>

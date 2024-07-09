@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "flask_vue_example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "parcel build ./src/frontend/index.js --dist-dir ./src/static/dist --no-cache --log-level verbose",
+    "watch": "parcel watch ./src/frontend/index.js --dist-dir ./src/static/dist --no-cache",
+    "dev": "parcel build ./src/frontend/index.js --dist-dir ./src/static/dist --no-cache && pipenv run python main.py"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@parcel/transformer-vue": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}
